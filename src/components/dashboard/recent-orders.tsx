@@ -4,7 +4,7 @@ const recentOrders = [
   {
     id: "1",
     table: "Mesa 1",
-    amount: "R$ 45,00",
+    amount: "45,00€",
     status: "completed",
     email: "m.g@example.com",
     name: "Maria G.",
@@ -12,7 +12,7 @@ const recentOrders = [
   {
     id: "2",
     table: "Mesa 3",
-    amount: "R$ 78,50",
+    amount: "78,50€",
     status: "processing",
     email: "j.s@example.com",
     name: "João S.",
@@ -20,7 +20,7 @@ const recentOrders = [
   {
     id: "3",
     table: "Mesa 5",
-    amount: "R$ 125,00",
+    amount: "125,00€",
     status: "pending",
     email: "a.r@example.com",
     name: "Ana R.",

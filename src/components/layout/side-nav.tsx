@@ -20,19 +20,9 @@ const routes = [
     href: '/dashboard',
   },
   {
-    label: 'Mesas',
-    icon: TableIcon,
-    href: '/tables',
-  },
-  {
     label: 'Ingredientes',
     icon: Apple,
     href: '/ingredients',
-  },
-  {
-    label: 'Menus',
-    icon: FileText,
-    href: '/menus',
   },
   {
     label: 'Categorias',
@@ -43,6 +33,16 @@ const routes = [
     label: 'Produtos',
     icon: ShoppingCart,
     href: '/products',
+  },
+  {
+    label: 'Menus',
+    icon: FileText,
+    href: '/menus',
+  },
+  {
+    label: 'Mesas',
+    icon: TableIcon,
+    href: '/tables',
   },
   {
     label: 'Configurações',

@@ -7,7 +7,9 @@ export default function AdminLayout({
 }) {
   return (
     <div className="flex h-screen">
-      <SideNav />
+      <div className="w-64 flex-shrink-0">
+        <SideNav />
+      </div>
       <main className="flex-1 overflow-y-auto">
         {children}
       </main>

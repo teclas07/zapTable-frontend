@@ -24,11 +24,9 @@ export const TablesGrid: React.FC<TablesGridProps> = ({ businessId, restaurantNa
     queryKey: ['tables', businessId],
     queryFn: async () => {
       try {
-        // Primeiro, tente buscar as mesas específicas do negócio
         const response = await fetch(`/api/business/${businessId}/tables`);
         
         if (!response.ok) {
-          // Se falhar, tente buscar todas as mesas
           const fallbackResponse = await fetch('/api/tables');
           if (!fallbackResponse.ok) {
             throw new Error('Falha ao carregar mesas');
@@ -43,8 +41,6 @@ export const TablesGrid: React.FC<TablesGridProps> = ({ businessId, restaurantNa
       }
     },
   });
-
-  console.log('Tables data:', tables); // Adicione este log para debug
 
   // Function to generate QR code via external API
   const downloadQRCode = (table: Table) => {

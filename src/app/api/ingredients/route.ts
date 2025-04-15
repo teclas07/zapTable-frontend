@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Ingredient } from '@/types';
 
-let ingredients: Ingredient[] = [];
+const ingredients: Ingredient[] = [];
 let nextId = 1;
 
 export async function POST(req: Request) {

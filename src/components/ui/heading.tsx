@@ -1,5 +1,3 @@
-import { Separator } from "@radix-ui/react-separator";
-
 interface HeadingProps {
   title: string;
   description?: string;
@@ -8,8 +6,12 @@ interface HeadingProps {
 export function Heading({ title, description }: HeadingProps) {
   return (
     <div className="space-y-4">
-      <Heading title={title} description={description} />
-      <Separator />
+      <h2 className="text-3xl font-bold tracking-tight">{title}</h2>
+      {description && (
+        <p className="text-sm text-muted-foreground">
+          {description}
+        </p>
+      )}
     </div>
   );
 }

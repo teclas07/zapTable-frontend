@@ -13,7 +13,7 @@ export function DashboardPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">R$ 45.231</div>
+            <div className="text-2xl font-bold">45.231€</div>
             <p className="text-xs text-muted-foreground">
               +20.1% em relação ao mês anterior
             </p>

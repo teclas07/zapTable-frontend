@@ -15,7 +15,7 @@ export interface Restaurant {
 }
 
 export interface Table {
-  id: number;
+  id: string | number;
   table_number: number;
   qr_code: string;
   active: boolean;
